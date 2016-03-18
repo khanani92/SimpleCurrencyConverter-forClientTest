@@ -1,0 +1,37 @@
+12:47 AM PKT, 13 Mar, 2016 Michael Grosman
+Hi Muhammad <
+
+sorry about delay we are chasing our tails>>
+
+here is the challenge..it is designed to see where you are strong and maybe not so strong so we know how best to task team members if they come into our team.
+
+This code challenge will address following areas
+
+•	Javascript development in general
+•	AngularJS development specifically
+•	Integration with backend API
+•	Test-driven development
+•	Git and Github
+These are fundamental things that we want and I think this code challenge is small that won't take long time to build it and covers all areas, herewith the challenge:
+
+
+Currency Converter App
+Currency Converter is an AngularJS apps that gets from currency (example: AUD), to currency (example: USD) and amount (450) and tells user what's the converted amount.
+
+This app should have two dropdowns for From and To and a textbox which asks for amount. When user clicks on "Convert" button, app calculates new amount and shows in a label: like 450 AUD equals 380 USD.
+
+Expectations:
+•	You should get list of currencies and rates from http://fixer.io/ (it's a free service)
+•	You should calculate converted value based on rates from fixer.io webservice.
+•	You should write unit tests for your code.
+•	Having end-2-end tests is a bonus
+•	You should push your code to Github (public repo)
+•	You should have form validation
+
+also if you can track the time to do and let us know >
+thank you
+
+and good luck
+
+Michael
+•	Your code can be written in any version of AngularJS but not other frameworks

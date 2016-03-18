@@ -1,0 +1,44 @@
+<div class="welcome row">
+  <div class="col-md-6 col-sm-6 col-md-offset-4 col-sm-offset-4">
+    <h2>Currency Converter App</h2>
+  </div>
+  <div>
+    <form name="currencyConversion" ng-submit="currencyConversion.$valid && vm.convert()">
+      <div class="col-md-offset-4 col-sm-offset-4 col-md-2 col-sm-2">
+        <label>From:</label>
+        <select name="currencyFrom" ng-model="vm.currencyFrom" required>
+          <option ng-repeat="symbol in vm.currencySymbols" value="{{symbol}}">{{symbol}}</option>
+        </select>
+        <div ng-messages="currencyConversion.currencyFrom.$error" style="color:maroon" ng-if="currencyConversion.currencyFrom.$dirty || currencyConversion.$submitted">
+          <div ng-message="required">You did not enter a field</div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-2">
+        <label>To:</label>
+        <select name="currencyTo" ng-model="vm.currencyTo" required>
+          <option ng-repeat="symbol in vm.currencySymbols" value="{{symbol}}">{{symbol}}</option>
+        </select>
+          <div ng-messages="currencyConversion.currencyTo.$error" style="color:maroon" ng-if="currencyConversion.currencyTo.$dirty || currencyConversion.$submitted">
+            <div ng-message="required">You did not enter a field</div>
+          </div>
+
+      </div>
+      <div class="col-md-offset-4 col-sm-offset-4 col-md-3 col-sm-3">
+        <label>Amount:</label>
+        <input name="amount" ng-model="vm.currencyAmount" ng-pattern="/^[0-9.]+$/" required>
+        <div ng-messages="currencyConversion.amount.$error" style="color:maroon" ng-if="currencyConversion.$submitted">
+          <div ng-message="pattern">Only positive number is allowed</div>
+          <div ng-message="required">You did not enter a field</div>
+        </div>
+      </div>
+      <div class="col-md-offset-5 col-sm-offset-5 col-md-3 col-sm-3">
+      <div ng-if=" currencyConversion.$submitted && vm.currencyFrom === vm.currencyTo" style="color:maroon">Please select different conversion symbol</div>
+        <input type="submit" class="btn btn-primary" value="Convert">
+      </div>
+    </form>
+    <div class="col-md-offset-4 col-sm-offset-4 col-md-4 col-sm-4">
+      <h5>{{vm.conversionMessage}}</h5>
+    </div>
+  </div>
+
+</div>
