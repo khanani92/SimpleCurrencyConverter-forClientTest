@@ -1,7 +1,5 @@
-12:47 AM PKT, 13 Mar, 2016 Michael Grosman
-Hi Muhammad <
 
-sorry about delay we are chasing our tails>>
+
 
 here is the challenge..it is designed to see where you are strong and maybe not so strong so we know how best to task team members if they come into our team.
 
@@ -28,10 +26,3 @@ Expectations:
 •	You should push your code to Github (public repo)
 •	You should have form validation
 
-also if you can track the time to do and let us know >
-thank you
-
-and good luck
-
-Michael
-•	Your code can be written in any version of AngularJS but not other frameworks
